@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar ul li{
+    position: relative;
+    height: 70px;
+    width: 100%;
+    margin: 0 5px;
+    list-style-type: none;
+    filter: invert();
+}
+
+
+.ticketing{
+    text-decoration: none;
+    color:#091E42;
+    font-weight: 600;
+}
+
+.left_nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 65px;
+    background: #091e42;
+    padding: 6px 14px;
+    
+}
+
+.navbar{
+    position: relative;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    
+}
+
+.right_nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    border-radius: 50%;
+    max-height: 36px;
+    max-width: 36px;
+}
+
+.added{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: thin solid rgb(180, 168, 168);
+    border-radius: 5px;
+    margin-right: 20px;
+    height: 35px;
+    width: 78px;
+}
+
+.add_plus{
+    
+}
+
+.add_text{
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 3px 0 3px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: thin solid rgb(196, 180, 180);
+    border-radius: 50px;
+    width: 200px;
+    margin-right: 30px;
+    height: 35px;
+    width: 149px;
+}
+
+.search_icon{
+    margin-left: 60px;
+}
+
+.search_bar{
+    max-width: 149px;
+}
+
+
+
+input{
+    border: none;
+}
+
+.call{
+    margin-right: 20px;
+}
+
+.icon_bell{
+    margin-right: 20px;
+}
+
+.avatar_img{
+    margin-right: 20px;
+}
+
+.menu_grid{
+    margin-right: 5px;
+}
+
+.second_bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top:thin solid rgb(207, 197, 197);
+    border-bottom:thin solid rgb(207, 197, 197);
+    padding-left: 70px;
+}
+
+.left_side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.left_1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+    border-right:thin solid rgb(207, 197, 197); ;
+}
+
+.left_1_text{
+    text-decoration: none;
+    color: black;
+}
+
+.left_2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left_2_text{
+    text-decoration: none;
+    color: rgb(226, 220, 220);
+}
+
+.left_2_text_1{
+    text-decoration: none;
+    color: black;
+}
+
+.right_side{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.pipeline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: thin solid rgb(218, 206, 206);
+    border-radius: 5px;
+    height: 35px;
+    width: 192px;
+    margin-right: 90px;
+}
+
+.pipe_text{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.group_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.filter_text{
+    text-decoration: none;
+    color: rgb(204, 193, 193);
+}
+
+.big_list{
+    margin-left: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col_1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 140px;
+}
+
+.ava_list{
+    border-radius: 40px;
+    height: 30px;
+    width: 30px;
+}
+
+li{
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list_1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list_text{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+.icon_list{
+    padding-right: 15px;
+}
+
+.numb_list{
+    color: rgb(196, 183, 183);
+    text-decoration: none;
+}
+
+.first_li{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+

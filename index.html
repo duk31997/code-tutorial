@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul class="nav_list">
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAY9JREFUWEfll40xBEEQhb+LBJEgAyJABIgAGRABIiADZCAEMiAC6qmZq70xM9u781NbdNXW3e7t9Hz7+m3P3IqFxWphPPwJoG1gF9gD9N0fEvttcDwDL+7cXIgpCh0DRw7EPAEgsDvg3jLIAiQlbp0Slpype16BE0CfyRgDugZOSygiY5XzPJUzBySZVaIWodxS61ekgFooE05+A5yFF2NA8sxTC1kiOfed6dc/xYD06m51AtJcO8O5QqAD4KETjJ9mQ6UQqKWRU8+p/qQe9xMhkJqYunDPUDeXb6NAXz1JBnOthQkVWhxQzzfMC5Qt2eJMLbdrIe0Zh8BjytS63rNs7+EuItapezZH09IhlXp4yby4+nK2hNrozrm1LDRzi23IFXCZemvGdowap7YutUp3ADKw/Fm0hR0+yNwSqvFprI7RsCjkk0jmi5GMUkFt48P1Fi3WOjdHLSCpoHIIpChqAGVNOpWuBOjTqaKyVIu5QNVKFD7JHKCqJSoB0n8o9ZCqJSoBquaTXKIpJfufQN/Bl0kl+GYehgAAAABJRU5ErkJggg==" />
+            </li>
+            <li>
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAhBJREFUWEftlv0xBEEQxd9FgAgQASJABIgAESACRIAIEAEyIAJCIAMioH5qRvXNzkfvbqm6P7arrrbudrr77evXb2+mBYvZguHRBKg1kYmh/2JoU9KhJK7L4UqvN0mf4Xofri0Mc/f7juxC0kkA4WkEuGtJl57DnPEC2pd0JWnNWzg59y7pTNJjK98DCFbOk0IfofizJJoxKoIRAnpHEg+xmuRRq8pWC9Bd0EqsCxCK8rsnjsJ5C4zc41JyDVDKzJMkGqCLPoHoAbFnkmCJ+p0oAYLuB3OajQHMmEjZPshpqgQIXUSaYQaAQwOG+FATUUem+L6eFs0BsqNCMwi175hiH8RNPR6IGhHYUjjQGV0OEIkxAfF5BWwflsZs5qmkXUlsYwxGfxu+0GvFJqaAYOM1HICdIb4DKzQk9yaASidjJbFlHT0FhKvixESpWElLsIJ5RvHXxl3skwKC2u3QMbsFBTRoBFYAFSMdlU21W/wSjPT3fgoIx90ImXNUVlYsXWcPu1Ya9KRXFtC3adxycY4iWsZk4yvop7WZ2V5p076Acu8576hdgKyGPCMb6uh2ZFUNDRE1a87o0EL2/ZTRn1vUY9a+ovvOLbsIc/ZSM0bMa4hLe4DhVdF0q8ZIMeuinuJjznTeBq2X65hmnlz+1iKTvyh5jaXUU3jImawkPOY3pNngnAlQi7qJoYmhFgOt+z/l224lVQ36yAAAAABJRU5ErkJggg==" />
+
+            </li>
+            <li>
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAASxJREFUWEftl+FNwzAQRl83YIOWCWAD2g1ggtINYALUCdoNyggwAYxAN2AENqD6UFJd3UR3oXEVkP0nku9y9/w5OZ9HDGyMBsZDAfJ2pEmhCXAD6JlzfAKvwJdNkgJdA2/ARU4SE1swM+CjnkuBZLg6E0ydRirdtgF9G5hlZrAnE38vTKqQBcr9BzbmKkBmm4pC3j9RFCoKeQp49r//DbWt8BFYe8uv7A/AKuAbOjra4qhtuAwkkYt8xwHfk4AU/xlYOInkMw/AyOVkIAV5AbR9UsEONXbapn1LEYDqBajO824aLDV40wBA6tIr0C/yH71SgDwVi0L/R6FoZfVW3MW+BVQufkba5N8Dmy7RevC9q4psI5Am6+J2jturjpeDSp/77tVZwALkSTY4hXaXWzolaMO2pwAAAABJRU5ErkJggg==" />
+
+            </li>
+            <li>
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAkhJREFUWEftlo0xBEEUhPsiQASIABEgAkSACBABIkAEiAARIAJEgAjIgPrUvKt3szM7s3t3VafqXpXawvz0dPfrmYFmrAYzhkf/EtCKpH1J35Juw3dqxJYYOpB07XYH1L2kc0kf00DVBmhR0rskvql6CsD4TqzaAJ1JOg07vYXvWmJnmGIsco5dbYDYaDnscCjpRtKWpGNJO4mdkfMyAOstZw6Q986nJIzti98BxriFBDjAX0l67UpZDhC+2AyLYWAkSRX+AhTgjE0/jnVg7aEWWArQuqQXt8BSZasDjB87iMeAhCYn0mYrBQi6yR0Ko7JJl+JAMGZr+LmAMTmTPosBIcGXW2Gjjw/CfHxmcuZ8dhKzHwPiZBdhwefQVV3YyflsN/gw9lnDnzEgdD4Kq9Ihpvu4oGw+wO7cYnsh+Yd/igHFVwUD0dp0bzVkBepSnCRve1oc6SaaLwGsD1s7KI0zNHguhzC3BV8uX2Cty3VByj8mWCSjkPKvSrc9Y0r5UiunD1uPa8RHNYBsclu+MKbtuiACeDnE1biWugCyxUzOnM9gIpbTh60HVWz7Hze6BNYbNNVg3rQpdpizGj/04k1rAfk8gXZ+z10XuTQYMXPO1LWAeMbam8jTXupO0h8vEimNUEx1WQ2g2KAN2sNp4+40AwMaRvFVo9oky72BOKHlRpL2aBcbD6vFB1sboIqbQNuSpvrI95KVAPV5K5XWbCS1B4RZcwUrE2Vm3C4rnrTvgL451He/4rw5oBJFpfuqNH/i/58DKlH6C2QfgSXwegjbAAAAAElFTkSuQmCC" />
+
+
+            
+            </li>
+            <li>
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAhFJREFUWEftl/0xREEQxFsEhEAEiAARIAJEgAgQASIgA0SACBABIRAB9VO7VXN7+zXvjnqlzH9btTfTr6end25BI4uFkeHRnwK0JOlQ0qaktcD0s6QHSZeS3oewP5ShHUlXkgCVC8AcSLr1ghoC6FTSSWehM0nc7w4vIFrzZLK/hIK0iaB9AFg1d9Yl0cqu8AIicSx2J4nW5YJWbRtdAaorPICWJb2GrB+SOJeEi7beJC2G+yvh3ATlAQQbNyFjjZ1Y1LK02ytwDyAr5h6xeu9/f4gH0OgYshpCO+iipiH0Fn3qRzQEo3bK0AjaaE0Z1hCdfK6iJlnqQwBEK4+h0kY4WwA/6kPUHZVTR8oR+LXxmbQV+NR+76jbH3umLC2KYI8Kr/3Fb7/2TXEOvTCUIR5R3rTa+oHgo9i78XkA0Z49zwibxxW9sbQ1owcQhsgyBiuzBCsKSxuPbjFagJiU80xraAUtqTk1XoQv2WhukjVAMMMyZnXS86imX5/6FqAwyyxTNUBQHL8Q+4et7s0vQQVb6Cgud+TeyvWtBAgB06oYLvsvCCR9do4l4VcTUQJkH9EhbSqJ1raPGlOrbQnQp8nYEr538qq5c8UY7/tQhWmaddxTwFab6Cj+Y/m+lwNk9YOZcZ5noBv+8RJTOsoBGrQLOxBX85daFtsEnROUOgqXrpK7mH/egp0Z7z+gFoWjY+gLrcNtJQd+2ekAAAAASUVORK5CYII=" />
+
+            </li>
+            <li>
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAhtJREFUWEftl/0xBEEQxd9FQAaIABEgAyJABIgAEZABMpCBEwEyIAJEQP3UjOrr69nZvS9b5fqfvd2b6Xn7+vXHDtQzG/QMj5aAahGZJUPrkg4l3Ul6NQfvShrWgOT/ZwXoQtJ5cgqYDQPgKwE6dkBDjNMC2pJ0I4mrNesXQNiHpDNJt01sTQPIsuLPsH6fJW2aBTBVBDUJoBIrJYZ4DgD0la0IqiugiJUXSUeSnsyBkd9TSVdmzV4k9mgj2bIjiau1/UArl5IAiWWt8Nv6XU368Ux58f848YAIx4MknDRZZgV9ZCsBYg2pj6jxy/1a2mRfKATkBRiBGnNSYQigdg/hJTOxMZY8Q/YtceINcdqiZ/8vMcRz2KE2cc1AMksHku6zoyZAXQXfBIjzbGZdSzqJwrZIQLQUwoWhKbSKPab7UEOlt4y05J/VGEKf22kT4n6PdLRIhjg/aikjz/81IGpXbsI2ZG+2CC+Sod6Jeuq0zz3KZpOfBtsWxs8Uls6FkVGTxtpkAI2qeFPal1rHiH58GnKP6AC1UgFFTSEEkzRXxpQ8SVSbKzjIAEaNaPywkx9rLVtdx48xdiKGahU5GtAyW10HNKq2ZThsHTVAOax0fc+W3evLydxGWHtob4Z8C4okiNiKehapz1w9t8+gElterIidEYPRozTc/frqOoQ1aYys5FA/Vf7Jp3SbZGi1ZpYMtTqwtmgJqMbQN5glliUPfdDVAAAAAElFTkSuQmCC" />
+
+            </li>
+            <li>
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdBJREFUWEftl78uBFEUh78VER16gpYCNQlvwAMQPAEJDQ0aGgmeAOEBeANEK2jUCj1aEeQnd+Xu3btz5y+zsqfZzJw793zzu+ecPVOhZFYpGQ//EmgBWAK6gQNgP4vqWRUSxLMF8AL0/CXQKHDrAIwBd2mhsiqkuAo+YgDuAUGmtjyANoENQ7AF6Dq1NQ2QZN8DplK/avSDZ4DUrMs1n0IDJlFVQUWaKnIQ0O+P+YCWjTpFwlT3XgSOQkC5JqnnrSL39ynUAspyZKqMeeAJ2AVULT6bAVaBXuDY6lNam+jIVGGHVrnbjW4CuATaDMEpMNcA6ASYNb4PYBK4Ntc20AWgxH6s7uPmkBz9VhAbaA3YtnwPwLAHqBO4AYYs3zqw4wHSLcVU+X+bC/TpBPgNoBqOJEDjwFXOR1YnTBIgPZwkqVeAvkBSB4GickgPtxuF3mK28Q5ASf1urbeTWrdrRhZXIf2pagRVVVQVyTROeMBtIFWtRuCGVRbsEzGViVqWqA/FAXIrMcTonkILyFWscIVCRxTy535koYAhf/MDlW6E1XCvRtUV0j6j/xXQuBMc8hVHHVtnPZ0xaKPHz83+sT6DCmKIt20eX67xIsVcVTqgL8WVhSVG5kVpAAAAAElFTkSuQmCC" />
+            </li>
+            <li>
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAASxJREFUWEftmOENwiAQhV83cANXcAPdRN3ADdQN3EDdREdxE/OSo6EUPKRXWxP41YbCfbx30F4bzKw1M+NBBdIciSm0AbCWgU8AD20Sy/4Y0AnAUYKcAfD+Z60CaVJXhapCmgJa/5Q5tANwCwGnAiLIVoD2PtQUQA7GcRCoVcoSKLlqT4EQ5g6A1rXNCigMxPuOFaICbXKtB8MOC6AQxgX0oVRl3KChQGGgF4BlYBFjqMpYAKVWnVKMMaM2WeSQZkEMSoUpzSENxs8hZ1UWTAlQLoyDOsjFRXtllOYQz4yrDM5edS5MiUIcQyh+d3cOtG+Cfnp26La34jA/qc3A/k4h1mRj1mW9uk9TyMyKxES9ui8G5G/tWQAtZFuvxqaRdOikRP37oaleFdIUegPABGElF1K+WQAAAABJRU5ErkJggg==" />
+
+            </li>
+            <li>
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAb1JREFUWEftl40xBEEQhd9FgAgQARkgAkSACMgAESACZOAiQASIABEgAupTPap37fyVde7UdpW642anv3nd/W6MNGUxmjIe/RugJUmbktYl8X7VlL6X9CTpStJY0mttBWoVIvmhpN3CREeSzmrAaoC2JJ1Lmi+ECctQaUMS6mWjFAhFgPFBSUhyY68kpnT8HEhacYv5bM9KmYQqAWrDvFnJ6JNUoOiFpDlbVKRUDoieuXNlerBGLm1Wngc8qIWilC/6fA6IE+7YCVGGcjBFNQEUIEGpY0k0e2ekgNjo0T21XdIDkTy+7KizHFMpBURjnliCWytVjTLttSi7aH+MHi4FxPSs2QZJmQspKRMeRlzGvCwF5E9EIwL4k8DVr3OKp4DeXfaFGreNUGOoL84C2PNblALlprFUOX/Izj0HICdlsUKndrXAh0LwsJ+SkqnrWu9LxtBgvOzVSOR/B2Y/0mt9A4U0jcO1ZcNFg8W3wX8LCKVw7s9oA3lJJwXU4BiAIob1Jcyg0Mwr9Bdj/2z/23WOvfeaSY190hiBAIorZ7jdBZ/o2xhRhq+Oxv26r2tF6fUju24Aykk0KDRzCn0A+hGPJb1J1wcAAAAASUVORK5CYII=" />
+
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="left_nav">
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAANVJREFUWEft1eEJwjAQxfHXCXQER3AEnVzdwBF0A7uBHFxBtHLk5R0GuX5NS379N00mDHZNg3lQoOiLVKEqFBWIxv9+De29wDUq8W1cWcgwJ5/oCIBCqUALZuugO4AdU0kBesfMAA6/KiTFWNGeQnJMDygFw4LSMAwoFcOCzgA2/ks/ANB7ztq2wCxqq5SGYkD2YmkoFpSG6gGloHpBcpQCtIa6+HnWfL6qQK+om2NsS2i+lKAFZSAKw2yMzW/c+oC6UOv8H/cXKEpYhapQVCAaH24NPQFwITAli96YmQAAAABJRU5ErkJggg==" />
+            <a class="ticketing" href="#">Ticketing</a>
+        </div>
+        <div class="right_nav">
+            <div class="added">
+                <img class="add_plus"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANtJREFUSEvVlWsNAkEMhL9TAA4ABSABnIAycHJIAAfgAAeQSWiyWfZFLwe5/t12ptNuph0jRzcyPjHBFjgCSyfxDTgAZ6uPCZSwcIJbmTBWOYLn+8E7uo/6GOjvBLUGBiuYJoF1nftc4R5dIxqdIOx8mjv4qYKai7iWXAMtKoyt4gHMEogXYAfoXTEHemCTyL2Hbpyy61PGUY1EmCXwfcmuU+NQt/L3NSAShTq/Arofpio5ylZbDkkE1ASuxFYCm7tdqmrnuYNT+zFSoiiOJQT5RkGNfNAOXOAqegFaqzkZNqi7rQAAAABJRU5ErkJggg==" />
+                <a class="add_text" href="#">Mới</a>
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII=" />
+            </div>
+            <div class="search">
+                <img class="search_icon"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUJJREFUSEu9le0xBEEURc9GQAhEgAzIgAjIABmQARmQgQwQARnYEIiAOlWv1avR3TO7NWOq9sdOd9/z+r6PWbHws1pYnx5gD7gEjoHDCOQdeAHugfWU4FqAuxDvabjnegxSAxjlQRx8BBTynY83uQLO042OepAhoET+FdYU4aGGIK3aCbuEVp8M0POP2GVULfEiJOQt/uy3cpIBJXoT2IxoEOZD2NU8kwHF+ynRD2/h2WouMuA7Tm3aG91zcwEsit1aluey6DWq7g/jX5O8bZlqjyVbHR2tRvsETjq9oOBz+H4L3ExptLInjwrr3BrPo8IBeJEEXTMYg+rmIC+ODTttcc9pzK0mZGxc29GOa4efogr5U1zPLU1nkutVyKZNVXOhC5kDIDRDzoCnEslcgALRzl9xX84JGP0e9D5MW68tfoMfCXxMGRHr0pcAAAAASUVORK5CYII=" />
+                <input class="search_bar" type="text" placeholder="Tìm Kiếm">
+            </div>
+            <div class="call">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII=" />
+            </div>
+            <div class="icon_bell">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATNJREFUSEvtldFRAkEMhj860A6kArECtQNKwAqECoQK0AqkBKgAqACtRDuQ+Z2EkWVzu3Bzb+Zlb2ey/5dks7keHVuvY33OAYyAuQU0ARY1wdUAroBnYAzoW/YNvAJv9h2ySgCP2oVTIYGegGVEaAJI/N0Orizije0fgClwb3tBsiWLADfAzkoSHjbIi5WpnytXBFB0OqjIh4XLVFbKZGbAI/cI8AHcAo+AlyXiqFxrQGfuUqcI8GOOpSZwvdD/H3BRifSovi68g+u0VdM7kLg6YgB82lozcrzrtKrz9MJ/LQW4o8TVfgfHAkWBqZ3V2kftmgK83U5SrUgjW9oIUKHX6HLQTQH+7NsAtlbe7B20Ec6erR0FPvz+imSHW+0sykUjiP4RMs1+7YtWm0FRKHLoHLAHNsk6GUbrB0oAAAAASUVORK5CYII=" />
+            </div>
+            <div class="avatar_img">
+                <img class="avatar" src="style/img/pngtree-flat-user-pattern-round-avatar-pattern-png-image_4492888.jpg"
+                    alt="">
+            </div>
+            <div class="menu_grid">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAEVJREFUSEtjZKAxYKSx+QzD04L/aMEG8yWp4mBjsAURqQbhUj+MLaBqyh2QZDoaySjBPiD5YDQVDXwcDP18MPRT0dDyAQDUICQZuHEVrgAAAABJRU5ErkJggg==" />
+            </div>
+        </div>
+    </div>
+
+    <div class="second_bar">
+        <div class="left_side">
+            <div class="left_1">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAI1JREFUWEftlEEOgCAMBJef+TR9mi/TcPNgGJDGgG6vC80y3ZI0WKXB/MiGaCImZEJEgPSpMnTQazr1WxglQjaUiU+Voc6IPLtuQsStRGiVFLFpG5m46m+sfVMspjKURxZRTX2acEa4ox429ClCtX/QLmmhl9fqEWv/X0O1lEPPee0JpwmZEBEg3RkiQicSDA4llBF5KQAAAABJRU5ErkJggg==" />
+                <a class="left_1_text" href="#">Bạn</a>
+            </div>
+            <div class="left_2">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMNJREFUSEvtleEJAjEMhb+bQEfQCfQmUjfTidQJvBF0AuVJC6c05kgpIpg/hUt5X5K27zoaR9dYn1rAPRVo6nwdsE0V7o1RVnWwBo5JuAdOBUgYMAcugFbFFVimdcwJA1Tt6q1ifVMn1QDNe2PMXLndKBfuIGt4Al7efQeegJf/A/jNEX26xgcg28vzJnpmZ42g9BDPgOzlJaIAWcgAzJLaDVgUrCTcgXSnmGEVQBDPzqsB7h83egaucN7gASYLWRubAx5ksy4ZW9JeOQAAAABJRU5ErkJggg==" />
+                <a class="left_2_text" href="#">Sắp xếp:</a>
+                <a class="left_2_text_1" href="#">Ngày tạo</a>
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALJJREFUSEvtkuEJwjAQRl9n0C10CME6hXUK2y10CnUKFRyibqEzWA5SwWD7JYWCQvortN+917tLxshPNjKfJJATTiP63RHtgK38vc+A1VR+Td+Sj8A6UGLZzbesukUXYCkklll1ZZRgCtyAWQegBhbAc6jA6uZOMvEgDwe/93WoOmhrc+DsgezdVe0oVGCcAjg4oJ1PCm7fYwSWL4EXsA+BDxGEct+52A6SIHoCsuD/d9AAKUkSGSAZkn8AAAAASUVORK5CYII=" />
+            </div>
+        </div>
+        <div class="right_side">
+            <div class="pipeline">
+                <a class="pipe_text" href="#">Tất cả Pipeline</a>
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtk0EOgDAIBLcvVX+mL9WQSEIqdFHTG170ADtlpA2TnzY5HwWghkvRL0U7gBPARlKGddE/kKblDpbvCELrMgDheBAbLjUHgLWfdrRFfYCFpMIFxtbUg0iP6gtPrpMwgOqxgdaCq8UWZAARhIZnFNnDWF2p8LcAnUTej22J7kpWEb2xBShFnw3QxguXRhoZddTo7wAAAABJRU5ErkJggg==" />
+            </div>
+
+            <div class="group_list">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFtJREFUSEtjZKAxYKSx+QyjFhAM4QEJov9QZ8Esh/EJuhZNH5iLzQc0t4BYlxKlbkDigCiXEatoQOJgNJJRomdAUhHN44DmFhCbxIlSNyBxQJTLiFU06gOCIQUAArwMGUsaCXEAAAAASUVORK5CYII=" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFZJREFUSEtjZKAxYKSx+Qx0t+A/lXwEdzi6D+hmAa6ggzmAaHlcPiDaALQgxXDAqAXoiW7wBBGl2WE0H+AswwZPJI/m5IFPpjTLaJQajKGf7nUy1X0AAFA0Khnvfun/AAAAAElFTkSuQmCC" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII=" />
+            </div>
+
+            <div class="filter">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAH9JREFUSEvVlFEKwCAMQ+P9Dz1hTJBhbTJbmX5K6zNNtCB5leTz8RvA9SiVL8Q2hADaITNb2oXo2l4B3QSArt06otloQjz48iRcMDsiCy4BGOMs0Chd956aoiXA+R70ClzzWLlWilIAoxQpf89bFJWiUMD5HrDBkOpW/yIXlg6ogyYYGS2nFSQAAAAASUVORK5CYII=" />
+                <a class="filter_text" href="#">Bộ lọc</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="big_list">
+        <div class="col_1">
+            <ul>
+                <li class="first_li">Khách hàng</li>
+                <li class="list_1">
+                    <img class="icon_list" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOFJREFUSEvtlWENwjAQhb9JwAFOAAc4AAcEBYADJIACwAEoAQk4gDzSI23TsR3L/q1/lmyv911vzXsVPa+q5/qUAHNgBUyd8CuwA/T8rhxwABbOwrlckK29jAHq/BQ+rIEz8GgJGwNLYBP0MztJDNDRJoCK71sWzmXqXJCbjTgGvIJ6BDz/BOgk97D3U7sE6HqzrNEBUPuXhhE1XuBhRN1H1JtVmNkldtvYbyows7sAcufEi2K7lvDotGvliOVA0a4FtA6cjSfy2sAxlaJSIGWDZykDtO9nZHoKttJ29f5GyBvePzYZtIJGaQAAAABJRU5ErkJggg==" />
+                    <img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt="#">
+                    <a class="list_text" href="#">Nguyễn Thắm</a>
+                </li>
+                <li class="list_1">
+                    <img class="icon_list" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOFJREFUSEvtlWENwjAQhb9JwAFOAAc4AAcEBYADJIACwAEoAQk4gDzSI23TsR3L/q1/lmyv911vzXsVPa+q5/qUAHNgBUyd8CuwA/T8rhxwABbOwrlckK29jAHq/BQ+rIEz8GgJGwNLYBP0MztJDNDRJoCK71sWzmXqXJCbjTgGvIJ6BDz/BOgk97D3U7sE6HqzrNEBUPuXhhE1XuBhRN1H1JtVmNkldtvYbyows7sAcufEi2K7lvDotGvliOVA0a4FtA6cjSfy2sAxlaJSIGWDZykDtO9nZHoKttJ29f5GyBvePzYZtIJGaQAAAABJRU5ErkJggg==" />
+                    <img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt="#">
+                    <a class="list_text" href="#">Hùng Vượng</a>
+                </li>
+                <li class="list_1">
+                    <img class="icon_list" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOFJREFUSEvtlWENwjAQhb9JwAFOAAc4AAcEBYADJIACwAEoAQk4gDzSI23TsR3L/q1/lmyv911vzXsVPa+q5/qUAHNgBUyd8CuwA/T8rhxwABbOwrlckK29jAHq/BQ+rIEz8GgJGwNLYBP0MztJDNDRJoCK71sWzmXqXJCbjTgGvIJ6BDz/BOgk97D3U7sE6HqzrNEBUPuXhhE1XuBhRN1H1JtVmNkldtvYbyows7sAcufEi2K7lvDotGvliOVA0a4FtA6cjSfy2sAxlaJSIGWDZykDtO9nZHoKttJ29f5GyBvePzYZtIJGaQAAAABJRU5ErkJggg==" />
+                    <img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt="#">
+                    <a class="list_text" href="#">456789</a>
+                </li>
+                <li class="list_1">
+                    <img class="icon_list" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOFJREFUSEvtlWENwjAQhb9JwAFOAAc4AAcEBYADJIACwAEoAQk4gDzSI23TsR3L/q1/lmyv911vzXsVPa+q5/qUAHNgBUyd8CuwA/T8rhxwABbOwrlckK29jAHq/BQ+rIEz8GgJGwNLYBP0MztJDNDRJoCK71sWzmXqXJCbjTgGvIJ6BDz/BOgk97D3U7sE6HqzrNEBUPuXhhE1XuBhRN1H1JtVmNkldtvYbyows7sAcufEi2K7lvDotGvliOVA0a4FtA6cjSfy2sAxlaJSIGWDZykDtO9nZHoKttJ29f5GyBvePzYZtIJGaQAAAABJRU5ErkJggg==" />
+                    <img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt="#">
+                    <a class="list_text" href="#">Coteccon</a>
+                </li>
+                <li class="list_1">
+                    <img class="icon_list" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOFJREFUSEvtlWENwjAQhb9JwAFOAAc4AAcEBYADJIACwAEoAQk4gDzSI23TsR3L/q1/lmyv911vzXsVPa+q5/qUAHNgBUyd8CuwA/T8rhxwABbOwrlckK29jAHq/BQ+rIEz8GgJGwNLYBP0MztJDNDRJoCK71sWzmXqXJCbjTgGvIJ6BDz/BOgk97D3U7sE6HqzrNEBUPuXhhE1XuBhRN1H1JtVmNkldtvYbyows7sAcufEi2K7lvDotGvliOVA0a4FtA6cjSfy2sAxlaJSIGWDZykDtO9nZHoKttJ29f5GyBvePzYZtIJGaQAAAABJRU5ErkJggg==" />
+                    <img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt="#">
+                    <a class="list_text" href="#">Văn Thế</a>
+                </li>
+                <li class="list_1">
+                    <img class="icon_list" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOFJREFUSEvtlWENwjAQhb9JwAFOAAc4AAcEBYADJIACwAEoAQk4gDzSI23TsR3L/q1/lmyv911vzXsVPa+q5/qUAHNgBUyd8CuwA/T8rhxwABbOwrlckK29jAHq/BQ+rIEz8GgJGwNLYBP0MztJDNDRJoCK71sWzmXqXJCbjTgGvIJ6BDz/BOgk97D3U7sE6HqzrNEBUPuXhhE1XuBhRN1H1JtVmNkldtvYbyows7sAcufEi2K7lvDotGvliOVA0a4FtA6cjSfy2sAxlaJSIGWDZykDtO9nZHoKttJ29f5GyBvePzYZtIJGaQAAAABJRU5ErkJggg==" />
+                    <img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt="#">
+                    <a class="list_text" href="#">namcuong@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col_2">
+            <ul>
+                <li class="first_li">Tên ticket</li>
+                <li class="list_text">Bắc Giang - Bảo trì cửa cuốn - Chị Thắm 0345123456 <a class="numb_list" href="#">#000006</a> </li>
+                <li class="list_text">Hà Nội - ĐL Hùng Vượng - Xuất hóa đơn đỏ <a class="numb_list" href="#">#000005</a> </li>
+                <li class="list_text">Consumer - Tư vấn sản phẩm <a class="numb_list" href="#">#000004</a> </li>
+                <li class="list_text">Key Account - Khiếu nại giao hàng chậm trễ <a class="numb_list" href="#">#000003</a> </li>
+                <li class="list_text">Lạng Sơn - Consumer - Thay nắm tay và bản lề cửa - anh Thế 0386456159 <a class="numb_list" href="#">#000002</a> </li>
+                <li class="list_text">Hà Nội - ĐL Nam Cường - Trả lại hàng <a class="numb_list" href="#">#000001</a> </li>
+            </ul>
+        </div>
+
+        <div class="col_3">
+            <ul>
+                <li class="first_li">Nhóm</li>
+                <li>--<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+                <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvlldENAiEQRN91oBWoFagVqKVYmaWoHWgHdqAdaCYBc0HuBrycP/JH2J232WGhYeTVjKyPA2yBAzAvLOQG7IFTjHcAJcwKxWOYchalgGcIdIVEvY94l/hzQAp0e2uyE3Dn1QDnd5UHE+AeFKfAw6kDxQCJH4FVEL0Auwzkqxa1xa8BsARykGpAKq5J1tJkdkHanettUU489l1nJZBegFqgKrVyprZNV+w6Y2oxIE54V4/ljS5AtQcuwT0d9ppWCySz8UeAglehN+T9DaT/ge76ZqD6GYgDal/TgSzGB7wA2gpKGe/oxd0AAAAASUVORK5CYII="/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+                <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUpJREFUSEu1lWFRAzEQhb8qABSAg4IDcIADQEHBQeugDgAFgALAQSWAA1AA85jkZtnmsrlAM9MfaZL3bXbz9mbseMx2rM9fAEfAHDh2QW6AV+BD//cA9oFb4Lxy+zPgpQegaJ8BQWrjBlhPBbSKS3cFLKcASuJPKUqtSWzPXGkSoCT+CajIP4UE7oCLFsApsEiHJfyW8u1zrpdyYgRV8AczLxbZRxFZJIsILnEFl8dB6ZkqYj0tm8sIov1KlX553AOXeeJ90AOxQfjaFI3WC5G40qT6DGPMyVMhRfHIB62QUfEIoPUIUhUfA+i5fgFXKZE1iPfD1qvzNVCR1MyyO1sg1Y7sF73ZNK9B1PetwcIbqDUcpl3vwDXwaE75dP0yVcmV/gYCKK9yqKLPzcyetWkces6Y5Xu+aNJSKxBoaAn/DYh6VOjkZoFo4zdMuEQZqngszAAAAABJRU5ErkJggg=="/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+                <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYhJREFUSEu1lIExBUEQRN+PABEgAjJABIRABMhABmSACBABIkAEhEAE1FO7Z6y92/1+/a26uqvbu+6Znu6dseQ1WzI+8xIcAvvALrAKvAMPwC1wXSu2l2ADuAG2Jzo+Aq7K/R4CwZ9SxR/ACfCcyC4TYBXcvRaBMtwnsEfgIMmiVGPg7g2dtAgy0EvSXc1b4BIPHbUIlGIr/GBHb8BKGu5e0DwS36VumxJ9JoBYiIPWOZIohdVGcH+x07WeGdQI/C+SSKZtXafAeSyqJZFyrAObSZrowkjiezvxe00xFN8isLqdOLTC55lE6yqXdzvQFN+ZmSKYckvkyYn2/pry0nRRL3gmEtykO4uh+rEOWj538IZOvU25Ep6lZ5OuNO79DGLEy2X8SyuWx47e9xstOqw4A9vLDpgCt3qrNAfKYRg9Tb3+rEhwARynY9dK8pp3Hr9IIoF66oLsaW23EHhtyBEwE0TCmgqT72o5KIc5etb3sI0FzYF75QH2YFW/aR0V/wYey8HCgCXAFzNTXhnyHsPuAAAAAElFTkSuQmCC"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+                <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYhJREFUSEu1lIExBUEQRN+PABEgAjJABIRABMhABmSACBABIkAEhEAE1FO7Z6y92/1+/a26uqvbu+6Znu6dseQ1WzI+8xIcAvvALrAKvAMPwC1wXSu2l2ADuAG2Jzo+Aq7K/R4CwZ9SxR/ACfCcyC4TYBXcvRaBMtwnsEfgIMmiVGPg7g2dtAgy0EvSXc1b4BIPHbUIlGIr/GBHb8BKGu5e0DwS36VumxJ9JoBYiIPWOZIohdVGcH+x07WeGdQI/C+SSKZtXafAeSyqJZFyrAObSZrowkjiezvxe00xFN8isLqdOLTC55lE6yqXdzvQFN+ZmSKYckvkyYn2/pry0nRRL3gmEtykO4uh+rEOWj538IZOvU25Ep6lZ5OuNO79DGLEy2X8SyuWx47e9xstOqw4A9vLDpgCt3qrNAfKYRg9Tb3+rEhwARynY9dK8pp3Hr9IIoF66oLsaW23EHhtyBEwE0TCmgqT72o5KIc5etb3sI0FzYF75QH2YFW/aR0V/wYey8HCgCXAFzNTXhnyHsPuAAAAAElFTkSuQmCC"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+                <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUpJREFUSEvFle0xRTEQhp9bAR2gAlSAClABKkAFqAAVoIJLB1RAB+iACpjX7JrcnM2HMy75kzlJdp/ddzcnE+Y8JnP2TwT4MOhP4aFdDTA2uRmfEeAe2Bjp/QHYTG0jwAVwCFwCR52gok0EWAMegTdgxeYaZxF4BjSvA0+tDLQ/RqaBPHJU6hTPolOhr2OD6GsA7e0DV0Y4Bc4ymupzbmsHwHUUTavXU4hkc8hJ0i1F560MPKAdQF2ylEX4blne1nRsZeC26hBlI1kcpC4TOJduhtcCSNdVc3RjlrpIAm3bt85IpnDUADLcAySFZFIN0qE1nVmwOYSUADKeFoKSNHIm7dN23rW1LolegqLmvC3LyttVNrr5TYBH/wosd940D2jQspFErv2xFbeH4VncWb2+bX77dz2Q6V8enD97MluXMK9N95vcU9TuM58110EZE2OFMQAAAABJRU5ErkJggg=="/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+            </ul>
+        </div>
+
+        <div class="col_4">
+            <ul>
+                <li class="first_li">Nhân viên</li>
+                <li><img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+                <li><img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+                <li><img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+                <li><img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+                <li><img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+                <li><img class="ava_list" src="style/img/pexels-photo-955086.jpeg" alt=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/></li>
+            </ul>
+        </div>
+
+        <div class="col_5">
+            <ul>
+                <li class="first_li">Pipeline</li>
+                <li class="list_text">Hỗ trợ khách hàng</li>
+                <li class="list_text">Khiếu nại</li>
+                <li class="list_text">SALE KH LẺ</li>
+                <li class="list_text">Bảo hành</li>
+                <li class="list_text">DV Sửa chữa</li>
+                <li class="list_text">Return-Refund</li>
+            </ul>
+        </div>
+
+        <div class="col_6">
+            <ul>
+                <li class="first_li">Trạng thái</li>
+                <li class="list_text">Thực hiện</li>
+                <li class="list_text">Kế toán verify</li>
+                <li class="list_text">Gửi mẫu và báo giá</li>
+                <li class="list_text">Chờ nội bộ phản hồi</li>
+                <li class="list_text">Sửa chữa tại địa chỉ</li>
+                <li class="list_text">Vận chuyển nhận lại...</li>
+            </ul>
+        </div>
+
+        <div class="col_7">
+            <ul>
+                <li class="first_li">Ưu tiên</li>
+                <li class="list_text"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/>Thấp</li>
+                <li class="list_text"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMhJREFUSEvtlNENwjAMBa8bsAmMABvAJIwAbMAmdAMYATZhBGREpCiK89xKET/NXyXrzn6NM9D5DJ35LAKZ8N8jWgFH4OK0egauwNsbpTWBwe/A5icwWH7s+wQ8gZ0n8QQ5/AVsKwCreQDrlqQmiMDTJFJSCqbAQ5JcMAcuJaVAZurcFre5WkRTJc3JvZ8clchYW9dUSSTc4lSLliQHYCzy3wM3wNuTb7l6i6xLW7ISnlwmsSZmPRXypYwUqAkijGbNIpARdo/oA+cXQBmVL+NCAAAAAElFTkSuQmCC"/>Trung bình</li>
+                <li class="list_text"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJdJREFUSEvt0tENQDAUheHfBjZhBDZgUjZgBDYxgpzkSkTKvR48aV/bnq85vQUfr+LjfDLgNvy/ikrrZHO7sQNvKlL4ZPdaIIREgSO8NmABQkgEOIevBlRACPGAa3hjwAyEkCcgFX70rr0Q8gR0wACoFr38+qlnpAfG1GR5FQnRS+8mRojwZLhAD4iO++25DLgV5op+UNEObt0dGTxMEa8AAAAASUVORK5CYII="/>Cao</li>
+                <li class="list_text"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALdJREFUSEvtlNENwjAMBa8bsAmMABvApLABjACbdAT0JFuKorR2FfKDms/EuWv9kkwMHtNgPrsg7PDWFh2MOIdkK9giEPxp+y5ASpIVOPxkgjeQkmQEJfxjgiOQkkSCGn42wQtISdYES3DPNyVZE1yBO6C2+JeXIUvkkhvwaJ2sqEWSCKIheB2y5iVvwrUYCVTzXyH75dJf/Tzk+uaWku6Ql54FSbpDzr5rzbrMKdoFXR0INw/P4AsNrTQZJG7lNwAAAABJRU5ErkJggg=="/>Khẩn cấp</li>
+                <li class="list_text"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJdJREFUSEvt0tENQDAUheHfBjZhBDZgUjZgBDYxgpzkSkTKvR48aV/bnq85vQUfr+LjfDLgNvy/ikrrZHO7sQNvKlL4ZPdaIIREgSO8NmABQkgEOIevBlRACPGAa3hjwAyEkCcgFX70rr0Q8gR0wACoFr38+qlnpAfG1GR5FQnRS+8mRojwZLhAD4iO++25DLgV5op+UNEObt0dGTxMEa8AAAAASUVORK5CYII="/>Cao</li>
+                <li class="list_text"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJdJREFUSEvt0tENQDAUheHfBjZhBDZgUjZgBDYxgpzkSkTKvR48aV/bnq85vQUfr+LjfDLgNvy/ikrrZHO7sQNvKlL4ZPdaIIREgSO8NmABQkgEOIevBlRACPGAa3hjwAyEkCcgFX70rr0Q8gR0wACoFr38+qlnpAfG1GR5FQnRS+8mRojwZLhAD4iO++25DLgV5op+UNEObt0dGTxMEa8AAAAASUVORK5CYII="/>Cao</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
